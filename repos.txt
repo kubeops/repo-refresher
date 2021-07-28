@@ -1,0 +1,4 @@
+github.com/kubeops/auditor
+github.com/kubeops/installer
+github.com/kubeops/kubed
+github.com/kubeops/panopticon
