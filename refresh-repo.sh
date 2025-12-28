@@ -37,10 +37,10 @@ refresh() {
         #     go mod tidy
         # fi
         go mod edit \
-            -require=kmodules.xyz/client-go@dd0503cf99cf3b6abb635d8945a8d7d8fed901d9 \
-            -require=kmodules.xyz/webhook-runtime@e489faf01981d2f3afa671989388c7b6f22b6baa \
-            -require=kmodules.xyz/resource-metadata@dcc1abc08aa00646b9474f7702b45c798b3ce66c \
-            -require=kmodules.xyz/custom-resources@83db827677cf5651491478fa85707d62416cf679 \
+            -require=kmodules.xyz/client-go@v0.34.2 \
+            -require=kmodules.xyz/webhook-runtime@v0.34.0 \
+            -require=kmodules.xyz/resource-metadata@v0.40.2 \
+            -require=kmodules.xyz/custom-resources@v0.34.0 \
             -replace=github.com/satori/go.uuid=github.com/gofrs/uuid@v4.0.0+incompatible \
             -replace=helm.sh/helm/v3=github.com/kubepack/helm/v3@v3.6.1-0.20210518225915-c3e0ce48dd1b \
             -replace=k8s.io/apiserver=github.com/kmodules/apiserver@v0.21.2-0.20210716212718-83e5493ac170
