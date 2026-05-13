@@ -60,10 +60,18 @@ refresh() {
 
     if [ -f go.mod ]; then
         go mod edit \
+            -require=stash.appscode.dev/apimachinery@1034b727 \
             -require=kmodules.xyz/client-go@v0.34.2 \
-            -require=kmodules.xyz/webhook-runtime@v0.34.0 \
-            -require=kmodules.xyz/resource-metadata@v0.40.2 \
+            -require=kmodules.xyz/crd-schema-fuzz@v0.34.1 \
             -require=kmodules.xyz/custom-resources@v0.34.0 \
+            -require=kmodules.xyz/go-containerregistry@v0.0.15 \
+            -require=kmodules.xyz/monitoring-agent-api@v0.34.0 \
+            -require=kmodules.xyz/objectstore-api@v0.34.0 \
+            -require=kmodules.xyz/offshoot-api@v0.34.0 \
+            -require=kmodules.xyz/prober@v0.34.0 \
+            -require=kmodules.xyz/resource-metadata@v0.40.2 \
+            -require=kmodules.xyz/resource-metrics@v0.34.0 \
+            -require=kmodules.xyz/webhook-runtime@v0.34.0 \
             -require=gomodules.xyz/password-generator@v0.2.9 \
             -require=go.bytebuilders.dev/license-verifier@v0.14.10 \
             -require=go.bytebuilders.dev/license-verifier/kubernetes@v0.14.10 \
