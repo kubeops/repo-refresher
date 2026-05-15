@@ -1,0 +1,16 @@
+stashed/cli
+stashed/elasticsearch
+stashed/enterprise
+stashed/etcd
+stashed/installer
+stashed/kubedump
+stashed/mariadb
+stashed/mongodb
+stashed/mysql
+stashed/nats
+stashed/percona-xtradb
+stashed/postgres
+stashed/redis
+stashed/stash
+stashed/ui-server
+stashed/vault
